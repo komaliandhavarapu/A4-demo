@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#fff0f7"><title>A Little Anniversary Surprise | OpenWithLove</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="petals" aria-hidden="true" id="petals"></div>
+<main class="app">
+  <section class="screen active" id="welcome">
+    <div class="tiny-label" id="eyebrow">A LITTLE GIFT FROM MY HEART</div>
+    <div class="hero-art"><span class="spark s1">✦</span><span class="heart-float h1">♡</span><div class="cute-gift"><div class="gift-ribbon"></div><div class="gift-bow">♡</div><span class="gift-heart">♥</span></div><span class="spark s2">✧</span><span class="heart-float h2">♥</span></div>
+    <div class="tiny-label">MADE WITH LOVE, JUST FOR YOU</div>
+    <h1 id="openingTitle">Happy Anniversary <span>♥</span></h1>
+    <p class="subtitle" id="openingSubtitle">A little world of love, made just for you.</p>
+    <button class="gradient-btn" id="openBtn">Open Your Surprise 🎁</button>
+    <div class="signature">a little something from <span>OpenWithLove</span></div>
+  </section>
+
+  <section class="screen" id="gifts">
+    <div class="tiny-label">✦ YOUR SPECIAL GIFTS ✦</div><h2>Choose your surprise <span>🎁</span></h2><p class="subtitle">Three little gifts, made with all my love.</p>
+    <div class="gift-list">
+      <article class="gift-card"><div class="icon-bubble">💌</div><h3>Love Letter</h3><p>A heartfelt letter that says what sometimes words can't.</p><button class="gradient-btn" data-go="letter">Open Letter 💌</button></article>
+      <article class="gift-card"><div class="icon-bubble">🖼️</div><h3>Memory Gallery</h3><p>Our most beautiful moments, saved just for you.</p><button class="gradient-btn" data-go="memories">View Memories ✨</button></article>
+      <article class="gift-card"><div class="icon-bubble">🍫</div><h3>Chocolate Surprise</h3><p>Unwrap something sweet, made especially for you.</p><button class="gradient-btn" data-go="chocolate">Unwrap Surprise 🍫</button></article>
+    </div>
+    <button class="text-btn" data-go="finale">A little more… ♡</button>
+  </section>
+
+  <section class="screen" id="letter">
+    <div class="tiny-label" id="letterDate">14 FEBRUARY 2024</div>
+    <article class="letter-paper"><div class="letter-flower">✿</div><h2 id="letterGreeting">My Dearest Love,</h2><div id="letterBody"></div><p class="signoff" id="letterSignoff">Always & endlessly,</p><div class="signature-name" id="senderName">Your Forever Person ♥</div></article>
+    <button class="gradient-btn" data-go="gifts">Back to Gifts ♡</button>
+  </section>
+
+  <section class="screen" id="memories">
+    <div class="tiny-label">♡ A COLLECTION OF LOVE ♡</div><h2>Our most beautiful<br><em>moments</em></h2><p class="subtitle">Little pieces of our story, kept close to my heart.</p>
+    <div class="memory-grid" id="memoryGrid"></div>
+    <button class="gradient-btn" data-go="gifts">Back to Gifts ♡</button>
+  </section>
+
+  <section class="screen" id="chocolate">
+    <div class="tiny-label">✦ A SWEET LITTLE SURPRISE ✦</div><h2>Unwrap your surprise <span>🍫</span></h2><p class="subtitle">Tap the wrapper to reveal something sweet.</p>
+    <button class="wrapper" id="wrapper" aria-label="Unwrap the chocolate"><span class="wrapper-shine"></span><span class="wrapper-bow">✦</span><span class="wrapper-heart">♥</span><span class="wrapper-hint">TAP TO UNWRAP</span></button>
+    <div class="chocolate-result" id="chocolateResult" hidden><div class="chocolate-grid" id="chocolateGrid"></div><div class="chocolate-caption">🍫 ✨</div><h2 id="chocolateTitle">Life is sweeter with you</h2><p id="chocolateMessage"></p></div>
+    <button class="gradient-btn" data-go="gifts">Back to Gifts ♡</button>
+  </section>
+
+  <section class="screen" id="finale">
+    <div class="final-art"><div class="character character-one"><span class="ear left"></span><span class="ear right"></span><span class="face">•ᴗ•</span><span class="cheek c1">●</span><span class="cheek c2">●</span></div><div class="character character-two"><span class="ear left"></span><span class="ear right"></span><span class="face">•ᴥ•</span><span class="cheek c1">●</span><span class="cheek c2">●</span></div><span class="floating-heart">♥</span></div>
+    <div class="tiny-label">✦ A PROMISE FROM MY HEART ✦</div><h1 id="finalTitle">Forever with you <span>💗</span></h1><p class="subtitle" id="finalSubtitle">Every day with you is a little more magical.</p><p class="final-message" id="finalMessage"></p>
+    <button class="gradient-btn" id="replayBtn">Replay ↻</button><button class="gradient-btn secondary" id="continueBtn">Continue Gift 🎁</button>
+    <div class="signature">made with love · <span>OpenWithLove</span></div>
+  </section>
+</main>
+<button class="music-toggle" id="musicToggle" type="button" aria-pressed="false" aria-label="Play background music">▶ Play music ♫</button>
+<audio id="bgMusic" preload="none"></audio>
+<script src="config.js"></script><script src="script.js"></script>
+</body></html>
